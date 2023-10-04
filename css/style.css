@@ -1,0 +1,341 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1A1E29;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+}
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+}
+.container{
+    width: 320px;
+    margin: 0 auto;
+}
+.balance{
+    width: 100%;
+    background-color: #01C38E;
+    width: 320px;
+    border-radius: 20px;
+    color: #fff;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.balance-wrap{
+    width: 155px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.balance h1{
+    width: 125px;
+    position: relative;
+    font-weight: bold;
+    font-size: 35px;
+}
+.balance h1::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url(/img/rub.svg);
+    position: absolute;
+    right: -35px;
+    top: 20%;
+    
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.balance-wrap p{
+    font-size: 10px;
+    opacity: 0.6;
+}
+.balance-btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.balance-btns ::after{
+    content: "";
+    background: #fff;
+    width: 1px;
+    height: 32px;
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+}
+.balance-btns a{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 7px;
+}
+.balance-btn{
+    opacity: 0.5;
+}
+.checked{
+    opacity: 1;
+}
+
+ol{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+}
+.diagram-header-link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.select{
+    color: #01C38E;
+    position: relative;
+}
+.select::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: #01C38E;
+    position: absolute;
+}
+.diagram-header{
+    background: #484A51;
+    border-radius: 35px 35px 0 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.diagram-header-wrap{
+    width: 320px;
+}
+.diagram{
+    background: #6A6E79;
+    border-radius: 35px;
+}
+.diagram-fast-date-swich{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    color: #fff;
+    font-size: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+.diagram-arrow{
+    width: 6px;
+    height: 12px;
+    background-image: url(/img/arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.main-diagram{
+    padding: 0 15px;
+    padding-bottom: 15px;
+}
+.left-arrow {
+    transform: scaleX(-1);
+}
+.main-diagram{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.date-pick-btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #D9FCF2;
+    position: relative;
+}
+.date-pick-btn::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(/img/date.svg);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.add-btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #01C38E;
+    position: relative;
+}
+.add-btn::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(/img/add.svg);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.diagram-cirle{
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+.expenses{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.expenses p{
+   font-size: 15px;
+   font-weight: 700; 
+   position: relative;
+}
+.expenses p::after{
+   width: 7px;
+   height: 8px;
+   content: "";
+   background-image: url(/img/rub.svg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   position: absolute;
+   right: -10px;
+   top: 5px;
+}
+.select-left{
+    background: #132D46;
+    width: 200px;
+    border-radius: 35px;
+}
+.select-right{
+    background: #6A6E79;
+    width: 110px;
+    border-radius: 35px;
+}
+.select-right select{
+    width: 110px;
+    background: 0;
+    border: 0;
+    appearance: none;
+    border-radius: 35px;
+    color: #Fff;
+    font-size: 15px;
+    text-align: center;
+}
+.select-right select:focus{
+}
+input {outline:none;outline-offset: 0;outline-color: transparent;}
+.select-wrap{
+    color: #Fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.card-wrap{
+    display: flex;
+    width: 300px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0 auto;
+}
+.categorie-card{
+    color: #fff;
+    width: 320px;
+    height: 60px;
+    border-radius: 15px;
+    background: #132D46;
+    margin-bottom: 10px;
+    
+}
+.categorie-card p{
+    font-size: 15px;
+    font-weight: 700;
+}
+.card-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.icon-color1{
+    background: #FFAB87;
+}
+.icon-color2{
+    background: #75FF83;
+}
+.icon-color3{
+    background: #615DFF;
+}
+.icon-color4{
+    background: #F3A9FF;
+}
+.categorie-balance{
+    padding-right: 10px;
+    position: relative;
+}
+.categorie-balance::after{
+    content: "";
+    width: 10px;
+    height: 12px;
+    background-image: url(/img/rub.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -2px;
+    top: 5px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.bot-btn{
+    width: 100px;
+    height: 70px;
+    display: flex;
+    background: #132D46;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.currency-btn::after{
+    content: "";
+    width: 70%;
+    height: 70%;
+    background: url(/img/valute.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.statistics-btn::after{
+    content: "";
+    width: 70%;
+    height: 70%;
+    background: url(/img/statistic.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.statistics-btn{
+    background: #01C38E;
+}
+.profile-btn::after{
+    content: "";
+    width: 70%;
+    height: 70%;
+    background: url(/img/profile.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
